@@ -12,12 +12,7 @@ do
 	awk '$1 == "'$uniq_lang'" { a=a+$2 } END { print "'$uniq_lang'",a }'  BUFF >> STATS
 done
 
-echo "Hello $1, you have $REPO_COUNT repos under your name"
-
-echo "I WANT ENVSUBST SO BADLY"
-which envsubst
-
-ls -l
+which base64
 
 export LANG1_NAME=$(sort -rnk2 STATS | head -1 | awk '{ print $1 }')
 export LANG1_BYTES=$(sort -rnk2 STATS | head -1 | awk '{ print $2 }')
@@ -41,7 +36,12 @@ export LANG7_NAME=$(sort -rnk2 STATS | head -7 | tail -1 | awk '{ print $1 }')
 export LANG7_BYTES=$(sort -rnk2 STATS | head -7 | tail -1 | awk '{ print $2 }')
 
 
-cat label.svg | envsubst 
+cat template.svg | envsubst | base64 > label.svg
+
+CURRENT_SHA=$(curl -L -s -u :$TOKEN https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg | jq .sha | tr -d '"' | head -1)
+
+curl -s -u :$TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg)'" }' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
+
 
 
 rm STATS
