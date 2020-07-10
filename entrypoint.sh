@@ -40,6 +40,8 @@ cat template.svg | envsubst | base64 > label.svg
 
 ls -l label.svg
 
+echo "TRY  https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg"
+
 CURRENT_SHA=$(curl -L -s -u :$TOKEN https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg | jq .sha | tr -d '"' | head -1)
 
 echo "SHA: $CURRENT_SHA"
