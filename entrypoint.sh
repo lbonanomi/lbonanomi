@@ -46,9 +46,9 @@ CURRENT_SHA=$(curl -L -s -u :$TOKEN https://api.github.com/repos/$GITHUB_REPOSIT
 
 echo "SHA: $CURRENT_SHA"
 
-echo curl -s -u :TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg)'" | tr -d '\n\r' }' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
+echo curl -s -u :TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg | base64 -w 0)'"}' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
 
-curl -s -u :$TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg)'" | tr -d '\n\r' }' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
+curl -s -u :$TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg | base64 -w 0)'"}' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
 
 
 
