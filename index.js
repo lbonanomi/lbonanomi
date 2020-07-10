@@ -11,9 +11,9 @@ try {
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  //console.log(`The event payload: ${payload}`);
 
-request('https://api.github.com/users/nameToGreet/repos', { json: true }, (err, res, body) => {
+request('https://api.github.com/users/' + nameToGreet + '/repos', { json: true }, (err, res, body) => {
   if (err) { return console.log(err); }
   console.log(body.url);
   console.log(body.explanation);
