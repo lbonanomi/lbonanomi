@@ -2,20 +2,10 @@
 
 REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | wc -l)
 
-echo "GO GET https://api.github.com/users/$1/repos"
-
-curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | tr -d '"'
-
 curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | tr -d '"' | while read dump
 do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print; }' 
 done | tee BUFF
-
-ls -l BUFF
-
-echo;echo;
-cat BUFF
-echo;echo;
 
 awk '{ print $1 }' BUFF | sort | uniq | while read uniq_lang
 do
