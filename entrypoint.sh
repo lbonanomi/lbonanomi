@@ -14,8 +14,7 @@ done
 
 echo "Hello $1, you have $REPO_COUNT repos under your name"
 
-git status
-git remote -vv
+which envsubst
 
 rm STATS
 rm BUFF
