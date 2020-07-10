@@ -7,7 +7,11 @@ do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print;}' 
 done > BUFF
 
+ls -l BUFF
+
+echo;echo;
 cat BUFF
+echo;echo;
 
 awk '{ print $1 }' BUFF | sort | uniq | while read uniq_lang
 do
