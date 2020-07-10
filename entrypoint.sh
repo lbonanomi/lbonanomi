@@ -19,8 +19,8 @@ which envsubst
 
 ls -l
 
-export LANG1_NAME=$(sort -nk2 STATS | head -1 | awk '{ print $1 }')
-export LANG1_BYTES=$(sort -nk2 STATS | head -1 | awk '{ print $2 }')
+export LANG1_NAME=$(sort -rnk2 STATS | head -1 | awk '{ print $1 }')
+export LANG1_BYTES=$(sort -rnk2 STATS | head -1 | awk '{ print $2 }')
 
 cat label.svg | envsubst 
 
