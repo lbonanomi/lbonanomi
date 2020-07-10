@@ -4,6 +4,8 @@ REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | 
 
 echo "GO GET https://api.github.com/users/$1/repos"
 
+curl -s https://api.github.com/users/$1/repos | jq .[].languages_url
+
 curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | while read dump
 do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print; }' 
