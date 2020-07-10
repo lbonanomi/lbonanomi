@@ -38,19 +38,8 @@ export LANG7_BYTES=$(sort -rnk2 STATS | head -7 | tail -1 | awk '{ print $2 }')
 
 cat template.svg | envsubst | base64 > label.svg
 
-ls -l label.svg
-
-echo "TRY  https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg"
-
 CURRENT_SHA=$(curl -L -s -u :$TOKEN https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg | jq .sha | tr -d '"' | head -1)
-
-echo "SHA: $CURRENT_SHA"
-
-echo curl -s -u :TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg | tr -d '\n\r')'"}' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
-
-curl -s -u :$TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg | tr -d '\n\r')'"}' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/feed.xml
-
-
+curl -s -u :$TOKEN -X PUT -d '{ "message":"Re-label", "sha":"'$CURRENT_SHA'", "content":"'$(cat label.svg | tr -d '\n\r')'"}' https://api.github.com/repos/$GITHUB_REPOSITORY/contents/label.svg
 
 rm STATS
 rm BUFF
