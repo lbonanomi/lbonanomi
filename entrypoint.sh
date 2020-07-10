@@ -5,7 +5,7 @@ REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | 
 curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | while read dump
 do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print;}' 
-done > BUFF
+done | tee BUFF
 
 ls -l BUFF
 
