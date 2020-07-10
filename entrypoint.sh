@@ -7,9 +7,11 @@ do
 	echo curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print;}' 
 done > BUFF
 
+cat BUFF
+
 awk '{ print $1 }' BUFF | sort | uniq | while read uniq_lang
 do
-	awk '/'"$uniq_lang"'/ { a=a+$2 } END { print '"$uniq_lang"', a }'
+	awk '$1 == "'$uniq_lang'" { a=a+$2 } END { print "'$uniq_lang'",a }'  Q
 done
 
 echo "Hello $1, you have $REPO_COUNT repos under your name"
