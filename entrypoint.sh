@@ -17,5 +17,7 @@ echo "Hello $1, you have $REPO_COUNT repos under your name"
 echo "I WANT ENVSUBST SO BADLY"
 which envsubst
 
+ls -l
+
 rm STATS
 rm BUFF
