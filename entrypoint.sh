@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | wc -l)
+export REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | wc -l)
 
 curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | tr -d '"' | while read dump
 do
