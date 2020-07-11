@@ -4,16 +4,41 @@
 
 <svg width="255" height="500">
 	<rect width="255" height="500" style="fill:rgb(255,255,255);stroke-width:8;stroke:rgb(0,0,0)" />
-	<text x="15" y="40" font-family="Helvetica" font-weight="bold" font-size="2em">Nutrition Facts</text>
+	<text x="15" y="40" font-family="Helvetica" font-weight="bold" font-size="2em">User Facts</text>
 	<line x1="15" y1="50" x2="244" y2="50" style="stroke:rgb(0,0,0);stroke-width:1" />
-	<text id="label_2" x="15" y="69" font-family="Helvetica" lengthAdjust="spacingAndGlyphs">13 servings per organization</text>
-	<text id="label_3" x="15" y="88" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Serving size</text>
+
+	<text id="label_2" x="15" y="69" font-family="Helvetica" lengthAdjust="spacingAndGlyphs">$13 servings per organization</text>
+	<text id="label_3" x="15" y="88" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Serving size</text> 
 	<text id="label_3" x="150" y="88" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">1 repo</text>
 	<line x1="15" y1="100" x2="244" y2="100" style="stroke:rgb(0,0,0);stroke-width:9" />
 	
-	<text id="label_4" x="15" y="120" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Co</text>
+	<text id="label_4" x="15" y="120" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Collaborates with:</text>
+	<text id="label_4" x="192" y="120" font-family="Helvetica"	lengthAdjust="spacingAndGlyphs">      1 "https://api.github.com/repos/Drozerah/es6-babel-node-starter"
+      2 "https://api.github.com/repos/botonomi/awesomesauce"
+      1 "https://api.github.com/repos/git-for-windows/git"
+      1 "https://api.github.com/repos/github/linguist"
+      1 "https://api.github.com/repos/github/platform-samples"
+      1 "https://api.github.com/repos/mertaytore/rss"
+      1 "https://api.github.com/repos/oilshell/oil"
+      1 "https://api.github.com/repos/ripienaar/free-for-dev"
+     21 "https://api.github.com/repos/tldr-pages/tldr" Orgs</text>
+
+	<line x1="15" y1="129" x2="244" y2="129" style="stroke:rgb(0,0,0);stroke-width:2" />
 	
-	<line x1="15" y1="129" x2="244" y2="129" style="stroke:rgb(0,0,0);stroke-width:4" />
+	<text x="15" y="147" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">PRs Opened:</text>
+	<text x="192" y="147" font-family="Helvetica"	lengthAdjust="spacingAndGlyphs">39</text>
+
+	<text x="15"	y="175" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Issues Opened:</text>
+	<text x="218"	y="175" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">      1 "https://api.github.com/repos/Autodesk/hubble"
+      1 "https://api.github.com/repos/JustKato/UltimateCompressor"
+      1 "https://api.github.com/repos/awslabs/git-secrets"
+      2 "https://api.github.com/repos/git-for-windows/git"
+      1 "https://api.github.com/repos/sbrl/Pepperminty-Wiki"
+      2 "https://api.github.com/repos/tldr-pages/tldr"
+      1 "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge"</text>
+
+	<line			x1="15"	y1="185" x2="245" y2="185" style="stroke:rgb(0,0,0);stroke-width:4" />
+
 	<text id="label_5" x="245" y="147" font-family="Helvetica" font-weight="bold" text-anchor="end" lengthAdjust="spacingAndGlyphs">% Daily Value</text>
 
 	<line 			x1="15"	y1="155" x2="245" y2="155" style="stroke:rgb(0,0,0);stroke-width:2" />
@@ -42,13 +67,13 @@
 	<text 	x="245"	y="295" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line	x1="15"	y1="305" x2="245" y2="305" style="stroke:rgb(0,0,0);stroke-width:2" />
-	<text 	x="15"	y="325" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Shell</text>
-	<text	x="75"	y="325" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">17 KB bytes</text>
+	<text 	x="15"	y="325" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs"></text>
+	<text	x="75"	y="325" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs"> bytes</text>
 	<text	x="245"	y="325" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line	x1="15"	y1="335" x2="245" y2="335" style="stroke:rgb(0,0,0);stroke-width:2" />
-	<text	x="15"	y="355" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">PHP</text>
-	<text	x="75"	y="355" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">15 KB bytes</text>
+	<text	x="15"	y="355" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs"></text>
+	<text	x="75"	y="355" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs"> bytes</text>
 	<text	x="245"	y="355" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line x1="15" y1="365" x2="244" y2="365" style="stroke:rgb(0,0,0);stroke-width:4" />
