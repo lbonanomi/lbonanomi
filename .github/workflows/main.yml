@@ -1,23 +1,17 @@
-//on: [push]
+on:
+  schedule:
+    - cron: "0 */4 * * *"
 
 jobs:
-  hello_world_job:
+  generate_content_label:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Concentrate organization's top-7 languages
 
     env:
       TOKEN: ${{ secrets.TOKEN }}   
 
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: Concentrate and generate
         uses: ./ # Uses an action in the root directory
-        id: hello
-        with:
-          who-to-greet: 'lbonanomi'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
