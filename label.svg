@@ -6,7 +6,7 @@
 	<rect width="255" height="500" style="fill:rgb(255,255,255);stroke-width:8;stroke:rgb(0,0,0)" />
 	<text x="15" y="40" font-family="Helvetica" font-weight="bold" font-size="2em">Nutrition Facts</text>
 	<line x1="15" y1="50" x2="244" y2="50" style="stroke:rgb(0,0,0);stroke-width:1" />
-	<text id="label_2" x="15" y="69" font-family="Helvetica" lengthAdjust="spacingAndGlyphs">5 servings per organization</text>
+	<text id="label_2" x="15" y="69" font-family="Helvetica" lengthAdjust="spacingAndGlyphs">13 servings per organization</text>
 	<text id="label_3" x="15" y="88" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Serving size 1 repo</text>
 	<line x1="15" y1="100" x2="244" y2="100" style="stroke:rgb(0,0,0);stroke-width:9" />
 	
