@@ -12,7 +12,13 @@ export JAM_WITH=$(curl -s -u :$TOKEN "https://api.github.com/search/issues?q=iis
 
 # Get language stats
 #
-curl -s https://api.github.com/users/$GITHUB_ACTOR/repos | jq .[].languages_url | tr -d '"' | while read dump
+
+# Include forked repos
+#curl -s https://api.github.com/users/$GITHUB_ACTOR/repos | jq .[].languages_url | tr -d '"' | while read dump
+
+# Exclude forked repos
+curl -s https://api.github.com/users/$GITHUB_ACTOR/repos | jq '.[] | "\(.languages_url ) \(.fork)"' | tr -d '"' | awk '/false$/ { print $1 }' | while read dump
+
 do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print; }' 
 done > BUFF
