@@ -8,7 +8,7 @@ export PULL_COUNT=$(curl -s -u :$TOKEN "https://api.github.com/search/issues?q=a
 
 # Get issue stats
 #
-export JAM_WITH=$(curl -s -u :$TOKEN "https://api.github.com/search/issues?q=iis:issue+commenter:$GITHUB_ACTOR+-user:$GITHUB_ACTOR" | jq .items[].repository_url | sort | uniq -c)
+export JAM_WITH=$(curl -s -u :$TOKEN "https://api.github.com/search/issues?q=iis:issue+commenter:$GITHUB_ACTOR+-user:$GITHUB_ACTOR" | jq .items[].repository_url | sort | uniq | wc -l)
 
 # Get language stats
 #
