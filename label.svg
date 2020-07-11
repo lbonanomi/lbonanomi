@@ -13,15 +13,7 @@
 	<line x1="15" y1="100" x2="244" y2="100" style="stroke:rgb(0,0,0);stroke-width:9" />
 	
 	<text id="label_4" x="15" y="120" font-family="Helvetica" font-weight="bold" lengthAdjust="spacingAndGlyphs">Collaborates with:</text>
-	<text id="label_4" x="192" y="120" font-family="Helvetica"	lengthAdjust="spacingAndGlyphs">      1 "https://api.github.com/repos/Drozerah/es6-babel-node-starter"
-      2 "https://api.github.com/repos/botonomi/awesomesauce"
-      1 "https://api.github.com/repos/git-for-windows/git"
-      1 "https://api.github.com/repos/github/linguist"
-      1 "https://api.github.com/repos/github/platform-samples"
-      1 "https://api.github.com/repos/mertaytore/rss"
-      1 "https://api.github.com/repos/oilshell/oil"
-      1 "https://api.github.com/repos/ripienaar/free-for-dev"
-     21 "https://api.github.com/repos/tldr-pages/tldr" Orgs</text>
+	<text id="label_4" x="192" y="120" font-family="Helvetica"	lengthAdjust="spacingAndGlyphs">9 Orgs</text>
 
 	<line x1="15" y1="129" x2="244" y2="129" style="stroke:rgb(0,0,0);stroke-width:2" />
 	
