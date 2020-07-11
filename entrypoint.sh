@@ -2,7 +2,7 @@
 
 export REPO_COUNT=$(curl -s https://api.github.com/users/$1/repos | jq .[].full_name | wc -l)
 
-curl -s https://api.github.com/users/$1/repos | jq .[].languages_url | tr -d '"' | while read dump
+curl -s https://api.github.com/users/$GITHUB_ACTOR/repos | jq .[].languages_url | tr -d '"' | while read dump
 do
 	curl -s $dump | awk '/:/ { gsub(/\"/,"");gsub(/:/,"");gsub(/,/,""); print; }' 
 done > BUFF
