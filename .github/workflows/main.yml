@@ -1,10 +1,11 @@
 name: Labeler
 
-on: [push]
+on:
+  schedule:
+    - cron: "30 */4 * * *"
 
 jobs:
-  build:
-
+  generate_content_label:
     runs-on: ubuntu-latest
 
     env:
