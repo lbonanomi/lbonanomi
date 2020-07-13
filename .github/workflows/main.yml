@@ -1,19 +1,17 @@
-on:
-  schedule:
-    - cron: "30 */4 * * *"
+name: Labeler
 
-#on: [ push ]
+on: [push]
 
 jobs:
-  generate_content_label:
+  build:
+
     runs-on: ubuntu-latest
-    name: Concentrate organization's top-7 languages
 
     env:
       TOKEN: ${{ secrets.TOKEN }}   
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Concentrate and generate
-        uses: ./ # Uses an action in the root directory
+    - name: User Nutrition Label
+      uses: lbonanomi/nutrition-label@1.0
+      with:
+        count-forked: 'false'
