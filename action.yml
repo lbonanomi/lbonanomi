@@ -1,13 +1,21 @@
-# action.yml
-name: 'Content Label'
-description: 'Generator'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+name: Labeler
+
+on:
+  push:
+    branches: [ main ]
+#  pull_request:
+#    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    env:
+      TOKEN: ${{ secrets.TOKEN }}   
+
+    steps:
+    - name: User Nutrition Label
+      uses: lbonanomi/nutrition-label@1.0
+      with:
+        count-forked: 'false'
