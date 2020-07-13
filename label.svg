@@ -44,13 +44,13 @@
 	<text x="245"	y="265" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line	x1="15"	y1="275" x2="245" y2="275" style="stroke:rgb(0,0,0);stroke-width:2" />
-	<text 	x="15"	y="295" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Perl</text>
-	<text	x="75"	y="295" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">19 KB</text>
+	<text 	x="15"	y="295" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Shell</text>
+	<text	x="75"	y="295" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">20 KB</text>
 	<text 	x="245"	y="295" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line	x1="15"	y1="305" x2="245" y2="305" style="stroke:rgb(0,0,0);stroke-width:2" />
-	<text 	x="15"	y="325" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Shell</text>
-	<text	x="75"	y="325" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">17 KB</text>
+	<text 	x="15"	y="325" font-family="Helvetica" font-weight="bold"	lengthAdjust="spacingAndGlyphs">Perl</text>
+	<text	x="75"	y="325" font-family="Helvetica" 						lengthAdjust="spacingAndGlyphs">19 KB</text>
 	<text	x="245"	y="325" font-family="Helvetica"						lengthAdjust="spacingAndGlyphs"	text-anchor="end">X%</text>
 	
 	<line	x1="15"	y1="335" x2="245" y2="335" style="stroke:rgb(0,0,0);stroke-width:2" />
