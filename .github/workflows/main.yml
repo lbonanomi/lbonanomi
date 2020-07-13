@@ -2,7 +2,7 @@ name: Labeler
 
 on:
   schedule:
-    - cron: "30 */4 * * *"
+    - cron: "00 */4 * * *"
 
 jobs:
   generate_content_label:
