@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - name: User Nutrition Label
-      uses: lbonanomi/nutrition-label@1.2
+      uses: lbonanomi/nutrition-label@1.3
       with:
         count-forked: 'false'
