@@ -1,9 +1,6 @@
 name: Labeler
 
 on:
-  
-
-on:
   schedule:
     - cron: "0 12 * * *"
 
