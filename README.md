@@ -1,3 +1,9 @@
-<img src="https://raw.githubusercontent.com/lbonanomi/lbonanomi/main/label.svg" align="left" alt="user statistics"/> You can ignore the contribution graph.
+<img src="https://raw.githubusercontent.com/lbonanomi/lbonanomi/main/label.svg" align="left" alt="user statistics"/> 
+ 
 
-← That infographic is rebuilt by a Github Action.
+* Recriters: I am very happy with my current role.
+
+* People who found me through [trimstray](https://github.com/): I'm delighted for the follows but I'm ***really*** not a security person.
+
+* People who think contribution graphs are important:<br>
+← That infographic is rebuilt by a Github Action running on a cron schedule.
