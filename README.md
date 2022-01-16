@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/lbonanomi/lbonanomi/main/label.svg" align="left" alt="user statistics"/> 
  
 
-* Recriters: I am very happy with my current role.
+* Recruiters: I am very happy with my current role.
 
 * People who found me through [trimstray](https://github.com/): I'm delighted for the follows but I'm ***not a security person***.
 
