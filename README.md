@@ -1,3 +1,5 @@
-<!-- <img src="comic.png" align="center" alt="banner:"> -->
+<img src="banner.png" >
 
-<img src="https://raw.githubusercontent.com/lbonanomi/lbonanomi/main/label.svg" align="left" alt="user statistics"/>
+<br><br><br>
+
+<img src="notes.png" height=100> <img src="go.png" height=100><img src="scripts.png" height=100> <img src="rss.png" height=100>  
