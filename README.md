@@ -1,4 +1,4 @@
-<img src="large-banner.png" >
+![lbonanomi](./large-banner.png#gh-dark-mode-only)
 
 <br><br><br>
 
