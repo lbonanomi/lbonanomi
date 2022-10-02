@@ -1,4 +1,4 @@
-![lbonanomi](./large-banner-dark.png#gh-dark-mode-only)
+![lbonanomi](./banner-clear.png#gh-dark-mode-only)
 ![lbonanomi](./large-banner-light.png#gh-light-mode-only)
 
 <br><br><br>
